@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Wave from "./Wave";
 
 const SectionGroup = styled.div`
-  background: url(${(props) => props.image});
+  background-color: white;
   height: 720px;
   background-size: cover;
   display: grid;
@@ -33,7 +33,7 @@ const SectionTitleGroup = styled.div`
 `;
 
 const SectionTitle = styled.h3`
-  color: white;
+  color: #28282b;
   font-size: 60px;
   margin: 0;
   line-height: 1.2;
@@ -44,7 +44,9 @@ const SectionTitle = styled.h3`
 `;
 
 const SectionText = styled.p`
-  color: white;
+  color: #28282b;
+  font-size: 20px;
+  font-weight: 500;  
   word-wrap: break-word;
 `;
 

@@ -3,11 +3,13 @@ import "./card.css";
 
 const card = (props) => {
   return (
-    <div className="Card">
-      <img src={props.image} alt="" />
-      <h3>{props.title}</h3>
-      <p>{props.text}</p>
-    </div>
+    <>
+      <div className="Card">
+        <img src={props.image} alt="" />
+        <h3>{props.title}</h3>
+        <p>{props.text}</p>
+      </div>
+    </>
   );
 };
 

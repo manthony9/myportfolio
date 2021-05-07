@@ -1,6 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./header.css";
+import { Switch, NavLink, Route } from "react-router-dom";
+import About from "./about";
+import Projects from "./projects";
+import Articles from "./blog";
 
 class Header extends React.Component {
   constructor(props) {
@@ -30,10 +34,9 @@ class Header extends React.Component {
         className={this.state.hasScrolled ? "Header HeaderScrolled" : "Header"}
       >
         <div className="HeaderGroup">
-          <Link to="/">Morris Anthony</Link>
-          <Link to="/projects">Projects</Link>
-          <Link to="/about">About</Link>
-          <Link to="/contact">Contact</Link>
+          <NavLink to="/">Morris Anthony</NavLink>
+          <NavLink to="/blog">Blog</NavLink>
+          <NavLink to="/contact">Contact</NavLink>
         </div>
       </div>
     );
